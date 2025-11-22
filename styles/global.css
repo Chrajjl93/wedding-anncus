@@ -129,7 +129,7 @@ img {
   margin: 15px 15px;
 }
 
-.divider-wrapper > div {
+.divider-wrapper>div {
   position: absolute;
   right: 50%;
   width: 1.5px;
@@ -146,7 +146,7 @@ img {
   max-height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background-color: #5D7459;
+  background-color: #FFFFFF;
   justify-content: center;
   align-items: center;
 }
@@ -172,12 +172,12 @@ img {
 
 .auth-center-top-div>p {
   font-size: 0.75rem;
-  color: #CED5CD;
+  color: #5F7C99;
 }
 
 .auth-center-top-div>h4 {
   font-size: 2rem;
-  color: #CED5CD;
+  color: #5F7C99;
 }
 
 .auth-center-bottom-div {
@@ -191,9 +191,9 @@ img {
 }
 
 .auth-center-bottom-div>p {
-  font-size: 4.5rem;
-  color: #CED5CD;
-  font-family: "beautifully-delicious-script-regular", sans-serif;
+  font-size: 1.5rem;
+  color: #5F7C99;
+  /* font-family: "beautifully-delicious-script-regular", sans-serif; */
 }
 
 .auth-top-left-img {
@@ -204,12 +204,14 @@ img {
   height: 500px;
   width: 500px; */
 
-  top: -2.5rem;
-  left: -4.375rem;
-  height: 31.25rem;
-  width: 31.25rem;
+  /* top: -2.5rem; */
+  top: 0;
+  /* left: -4.375rem; */
+  left: 0;
+  /* height: 31.25rem; */
+  width: 26.25rem;
 
-  rotate: 10deg;
+  /* rotate: 10deg; */
 }
 
 .auth-bottom-right-img {
@@ -220,27 +222,39 @@ img {
   height: 500px;
   width: 500px; */
 
-  bottom: -3.125rem;
-  right: -5rem;
-  height: 31.25rem;
-  width: 31.25rem;
+  /* bottom: -3.125rem;
+  right: -5rem; */
+  bottom: 0;
+  right: 0;
+  /* height: 31.25rem; */
+  width: 33.25rem;
 
-  transform: scaleX(-1);
-  rotate: -50deg;
+  /* transform: scaleX(-1); */
+  /* rotate: -50deg; */
+}
+
+@media screen and (max-width: 800px) {
+
+  .auth-top-left-img {
+    width: 23rem;
+  }
+
+  .auth-bottom-right-img {
+    width: 26 rem;
+  }
 }
 
 .auth-input {
   /* width: 400px; */
   width: 90vw;
   height: 60px;
-  color: #37485C;
+  color: #5F7C99;
   overflow: visible;
   border-radius: 6px;
   outline: none;
-  background-color: #DFE3DE;
-  caret-color: #5D745A;
+  background-color: #C9DDEE;
+  caret-color: #5F7C99;
   border: none;
-
   font-family: "Montaga", serif;
   font-weight: 900;
   font-style: normal;
@@ -251,8 +265,6 @@ img {
   /* border-style: solid;
   border-width: 2px;
   border-color: #344730; */
-
-
 }
 
 /* Target the input when it's focused and has autofill */
@@ -265,15 +277,14 @@ img {
   /* -webkit-text-fill-color: #576A53; */
   transition: background-color 5000s ease-in-out 0s;
   /* box-shadow: inset 0 0 20px 20px #576A53; */
-  caret-color: #A8BBCE;
+  caret-color: #5F7C99;
 }
 
 /* Reset styles for placeholders to ensure proper visibility */
 .auth-input::placeholder {
   text-align: center;
-  color: #37485C;
+  color: #5F7C99;
   font-size: 1.2rem;
-  color: #5D745A;
   font-family: "Montaga", serif;
   font-weight: 400;
   font-style: normal;
@@ -346,21 +357,21 @@ img {
   gap: 8px;
 }
 
-.programme-div > h4 {
+.programme-div>h4 {
   font-weight: 900;
   font-size: 0.8rem;
   font-family: "Inter";
   letter-spacing: 0.1;
 }
 
-.programme-div > h3 {
+.programme-div>h3 {
   font-weight: 500;
   font-size: 0.8rem;
   font-family: "Inter";
   letter-spacing: 0.1;
 }
 
-.programme-div > p {
+.programme-div>p {
   font-weight: 200;
   font-size: 0.8rem;
   opacity: 0.8;
@@ -370,7 +381,7 @@ img {
 .toastmaster-view {
   flex: 1;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .toastmaster-container {
@@ -401,7 +412,7 @@ img {
   }
 }
 
-.toastmaster-sub-container > h4 {
+.toastmaster-sub-container>h4 {
   text-align: left;
   font-size: 1.5rem;
 
@@ -410,12 +421,12 @@ img {
   }
 }
 
-.toastmaster-sub-container > p {
+.toastmaster-sub-container>p {
   text-align: left;
   font-size: 0.875rem;
   letter-spacing: 2px;
   line-height: 1.2;
-  
+
 }
 
 .toastmaster-image-wrapper {
@@ -441,7 +452,7 @@ img {
     height: 18.75rem;
     border-radius: 4px;
   }
-  
+
 }
 
 .top-content-container {
@@ -450,7 +461,7 @@ img {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;  
+  overflow: hidden;
 
   @media screen and (max-width: 800px) {
     height: fit-content;
@@ -480,10 +491,10 @@ img {
   align-items: center;
   /* height: 800px; */
   height: fit-content;
-  min-height: fit-content;  
+  min-height: fit-content;
   width: 100vw;
   /* background-color: #F4F3F1; */
-  background-color: #E9E3DD;    
+  background-color: #E9E3DD;
 
   @media screen and (max-width: 1000px) {
     justify-content: flex-start;
@@ -500,7 +511,7 @@ img {
   height: 460px;
   width: 100%;
   padding: 0 0 50px 0;
-  background-color: #E9E3DD;  
+  background-color: #E9E3DD;
 
   @media screen and (max-width: 1000px) {
     width: 100%;
@@ -530,7 +541,7 @@ img {
 
 .home-center-wrapper>div>h4 {
   font-size: 1.875rem;
-  margin-top: 3.125rem;  
+  margin-top: 3.125rem;
   text-align: left;
 
   @media screen and (max-width: 800px) {
@@ -542,6 +553,7 @@ img {
 .home-center-wrapper>div>p {
   margin: 0;
   text-align: left;
+
   @media screen and (max-width: 800px) {
     text-align: left;
     /* background-color: blue; */
@@ -606,7 +618,7 @@ img {
   aspect-ratio: contain;
   border-radius: 4px;
   margin-top: 20px;
-  
+
 
   @media screen and (max-width: 800px) {
     position: absolute;
@@ -619,7 +631,7 @@ img {
 
   @media screen and (max-width: 1000px) and (min-width: 800px) {
     position: absolute;
-    left: unset;    
+    left: unset;
     right: 0;
     /* height: 220px; */
     margin-top: 0;
@@ -673,7 +685,7 @@ img {
     margin: unset;
   }
 
-  @media screen and (max-width: 1000px) and (min-width: 800px) {    
+  @media screen and (max-width: 1000px) and (min-width: 800px) {
     margin: unset;
   }
 }
@@ -915,7 +927,7 @@ img {
 }
 
 /* Add a checkmark when checked */
-.checkbox-input input:checked+.checkmark::after {  
+.checkbox-input input:checked+.checkmark::after {
   /* content: '💍';  
   border-radius: 2px;
   display: block;
@@ -1422,6 +1434,7 @@ img {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -1441,7 +1454,7 @@ img {
   }
 }
 
-.hitta-hit-div > div {
+.hitta-hit-div>div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1452,7 +1465,7 @@ img {
   }
 }
 
-.hitta-hit-div > p {
+.hitta-hit-div>p {
   font-size: 1rem;
   text-align: center;
   width: 50%;
@@ -1477,7 +1490,7 @@ img {
 
 .hitta-hit-p {
   font-size: 1rem;
-  text-align: center; 
+  text-align: center;
   letter-spacing: 0.1;
   font-family: "Inter";
   font-weight: 500;
