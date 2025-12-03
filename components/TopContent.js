@@ -1,5 +1,5 @@
 import Image from 'next/image';
-// import Hero from '../public/wedding-hero.png';
+
 import Hero from '../public/am-wedding-hero.png';
 import NavigationBar from '../components/NavigationBar';
 

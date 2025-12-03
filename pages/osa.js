@@ -39,10 +39,10 @@ export default function OSA() {
         let checkedAttendNoHotel = array[8].checked;
         let checkedCannotAttend = array[9].checked;
         // checkbox group 2
-        let checkedSingleRoom = array[10].checked;
-        let checkedDoubleRoom = array[11].checked;
+        // let checkedSingleRoom = array[10].checked;
+        // let checkedDoubleRoom = array[11].checked;
 
-        let controlText = array[12].value;
+        let controlText = array[10].value;
 
         // validate required text fields
         if (!firstname || !email || !surname || !mobile) {
@@ -78,8 +78,8 @@ export default function OSA() {
                 "checkedAttendAndHotel": checkedAttendAndHotel,
                 "checkedAttendNoHotel": checkedAttendNoHotel,
                 "checkedCannotAttend": checkedCannotAttend,
-                "checkedSingleRoom": checkedSingleRoom,
-                "checkedDoubleRoom": checkedDoubleRoom,
+                // "checkedSingleRoom": checkedSingleRoom,
+                // "checkedDoubleRoom": checkedDoubleRoom,
                 "controlText": controlText
             });
             setLoading(true);
@@ -111,14 +111,14 @@ export default function OSA() {
         }
     }
 
-    const handleCheckboxGroupTwo = (id) => {
-        if (id === 1) {
-            setCheckboxGroupTwo({ "ind_1": true, "ind_2": false })
-        }
-        if (id === 2) {
-            setCheckboxGroupTwo({ "ind_1": false, "ind_2": true })
-        }
-    }
+    // const handleCheckboxGroupTwo = (id) => {
+    //     if (id === 1) {
+    //         setCheckboxGroupTwo({ "ind_1": true, "ind_2": false })
+    //     }
+    //     if (id === 2) {
+    //         setCheckboxGroupTwo({ "ind_1": false, "ind_2": true })
+    //     }
+    // }
 
     return (
         <div style={{ display: "flex", flexDirection: "column", height: "fit-content", overflow: "auto", width: "100vw", padding: 0, margin: 0 }}>
@@ -127,8 +127,8 @@ export default function OSA() {
             {/* Unique page content */}
             <div className="main-content-container">
                 <h1>OSA</h1>
-                <h2>Vi ser fram emot ditt deltagande!</h2>
-                <p>Vänligen OSA nedan senast den 31 mars 2025.</p>
+                <h2>Vi ser fram emot att fira med dig!</h2>
+                <p>Vänligen OSA nedan senast den 30 april 2026.</p>
                 <form className="osa-form" onSubmit={handleSubmit}>
 
                     <div style={{ display: "flex", flexDirection: "row", gap: 10, width: "100%" }}>
@@ -164,6 +164,8 @@ export default function OSA() {
 
                     <div className="osa-sub-center">
 
+                        <p style={{fontSize: "0.8rem", textAlign: "center", padding: "20px 40px"}}>{`Sista datum för OSA är 30 april 2026 (men helst samma dag som du får inbjudan om du frågar Anna ;))`}</p>
+
                         <div style={{ display: "flex", flexDirection: "column", width: "60%", alignItems: "center", marginTop: 20, gap: 10 }}>
                             <label className="text-input-label-2">OSAr du för någon mer än dig själv? (förnamn & efternamn)</label>
                             <input className="text-input" style={{ paddingTop: 0 }} />
@@ -185,7 +187,15 @@ export default function OSA() {
                                 <label className="checkbox-input">
                                     <input className="checkbox-input" type="checkbox" onChange={() => handleCheckboxGroupOne(1)} checked={checkboxGroupOne.ind_1} />
                                     <span className="checkmark"></span>
-                                    Jag / Vi kommer och övernattar!
+                                    <p>
+                                        Jag / Vi kommer och övernattar!
+                                        <span style={{ display: "block", paddingTop: 12 }}>
+                                            Bokning sker via mail på booking@noors.se där ni uppger datumet 27 juni och att ni är gäster till vårt bröllop.
+                                        </span>
+                                        <span style={{ display: "block", paddingTop: 12 }}>Pris dubbelrum: 895 kr/person</span>
+                                        <span style={{ display: "block", paddingTop: 4 }}>Pris enkelrum: 995 kr/person</span>
+                                        <span style={{ display: "block", paddingTop: 4 }}>I priset inkluderas frukostbuffé.</span>
+                                    </p>
                                 </label>
 
                             </div>
@@ -204,26 +214,7 @@ export default function OSA() {
                                     Jag kan inte komma tyvärr... 
                                 </label>
                             </div>
-                            <p style={{ fontSize: "1rem", marginTop: 20 }}>Vid övernattning - önskad rumstyp</p>
-                            <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 5 }}>
-
-                                <label className="checkbox-input">
-                                    <input type="checkbox" onChange={() => handleCheckboxGroupTwo(1)} checked={checkboxGroupTwo.ind_1} />
-                                    <span className="checkmark"></span>
-                                    Enkelrum
-                                </label>
-                            </div>
-
-                            <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 5 }}>
-                                <label className="checkbox-input">
-                                    <input type="checkbox" onChange={() => handleCheckboxGroupTwo(2)} checked={checkboxGroupTwo.ind_2} />
-                                    <span className="checkmark"></span>
-                                    Dubbelrum
-                                </label>
-                            </div>
-
-                            <p style={{ fontSize: "1rem", marginTop: 20 }}>Betalningsinformation för boende: 1200kr per person (mer info under "boende"). Betalning sker vid OSA! <br/>Betala med Swish till 0736649912 (Christian)</p>
-
+                            
                             <div className="osa-confirm-container">
                                 <label className="text-input-label" style={{ margin: 0, fontSize: "0.75rem", color: "#363636" }}>Bekräfta svaren genom att skriva 'ja'</label>
                                 <input className="text-input" style={{ paddingTop: 0 }} type="text" placeholder="ja" />
@@ -251,9 +242,9 @@ export default function OSA() {
                             <p style={{ display: "flex", textAlign: "center", paddingTop: 10, fontSize: 12, color: "green" }}>Tack för ditt svar!</p>
                         )}
                         {submitSuccess == false && (
-                            <p style={{ display: "flex", textAlign: "center", paddingTop: 10, fontSize: 12, color: "red" }}>Någonting blev fel, försök igen eller hör av dig till christian.kalvegren@hotmail.se</p>
+                            <p style={{ display: "flex", textAlign: "center", paddingTop: 10, fontSize: 12, color: "red" }}>Någonting blev fel, försök igen eller hör av dig till anna.s.saibel@gmail.com</p>
                         )}
-                        <p style={{ fontSize: 12, margin: "40px 0" }}>Sista datum för OSA 31 Mars 2025</p>
+                        {/* <p style={{ fontSize: 12, margin: "40px 0" }}>Sista datum för OSA 31 Mars 2025</p> */}
                     </div>
 
                     {/* <div style={{ display: "flex", alignSelf: "center", alignItems: "center", position: "relative", height: 2, width: 460, backgroundColor: "#CBC5B9", margin: "45px 15px" }} /> */}
@@ -264,11 +255,10 @@ export default function OSA() {
             </div >
 
             <RibbonContent />
-            <CountdownWrapper targetDate="2025-05-29T15:00:00" /> {/* (ant. 14.00 + 1 || 14.00 + 2) Behöver göra Svensk tid + 1h (vinter) + 2h sommartid för att beräkningarna ska funka*/}
+            <CountdownWrapper targetDate="2026-06-27T16:30:00" /> {/* (ant. 14.00 + 1 || 14.00 + 2) Behöver göra Svensk tid + 1h (vinter) + 2h sommartid för att beräkningarna ska funka*/}
 
             {/* <Footer /> */}
         </div >
     );
 
 }
-
