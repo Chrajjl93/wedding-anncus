@@ -1,5 +1,5 @@
 import Footer from '../components/Footer';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import TopContent from '../components/TopContent';
 import RibbonContent from '../components/RibbonContent';
 import CountdownWrapper from '../components/CountdownWrapper';
@@ -22,6 +22,11 @@ export default function OSA() {
 
     const [submitSuccess, setSubmitSuccess] = useState(null);
     const [loading, setLoading] = useState(null);
+    const prankButtonContainerRef = useRef(null);
+    const prankButtonRef = useRef(null);
+    const [prankButtonOffset, setPrankButtonOffset] = useState({ x: 0, y: 0 });
+    const [prankModeEnabled, setPrankModeEnabled] = useState(false);
+    const PRANK_SAFE_DISTANCE = 140;
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -119,6 +124,85 @@ export default function OSA() {
     //         setCheckboxGroupTwo({ "ind_1": false, "ind_2": true })
     //     }
     // }
+
+    const movePrankButton = (avoidPoint = null) => {
+        const container = prankButtonContainerRef.current;
+        const button = prankButtonRef.current;
+        if (!container || !button) {
+            return;
+        }
+        const containerRect = container.getBoundingClientRect();
+        const buttonRect = button.getBoundingClientRect();
+        const maxX = Math.max(containerRect.width - buttonRect.width, 0);
+        const maxY = Math.max(containerRect.height - buttonRect.height, 0);
+        let newX = 0;
+        let newY = 0;
+        const attempts = 8;
+
+        for (let i = 0; i < attempts; i++) {
+            const candidateX = Math.random() * maxX;
+            const candidateY = Math.random() * maxY;
+            if (avoidPoint) {
+                const centerX = candidateX + buttonRect.width / 2;
+                const centerY = candidateY + buttonRect.height / 2;
+                const distance = Math.hypot(centerX - avoidPoint.x, centerY - avoidPoint.y);
+                if (distance < PRANK_SAFE_DISTANCE) {
+                    if (i === attempts - 1) {
+                        newX = candidateX;
+                        newY = candidateY;
+                    }
+                    continue;
+                }
+            }
+            newX = candidateX;
+            newY = candidateY;
+            break;
+        }
+
+        setPrankButtonOffset({ x: newX, y: newY });
+        setPrankModeEnabled(true);
+    };
+
+    const handlePrankMouseMove = (event) => {
+        const container = prankButtonContainerRef.current;
+        const button = prankButtonRef.current;
+        if (!container || !button) {
+            return;
+        }
+
+        const containerRect = container.getBoundingClientRect();
+        const pointer = {
+            x: event.clientX - containerRect.left,
+            y: event.clientY - containerRect.top
+        };
+        const buttonRect = button.getBoundingClientRect();
+        const buttonCenter = {
+            x: buttonRect.left - containerRect.left + buttonRect.width / 2,
+            y: buttonRect.top - containerRect.top + buttonRect.height / 2
+        };
+        const distance = Math.hypot(pointer.x - buttonCenter.x, pointer.y - buttonCenter.y);
+
+        if (distance < PRANK_SAFE_DISTANCE) {
+            movePrankButton(pointer);
+        }
+    };
+
+    const handlePrankMouseEnter = (event) => {
+        const container = prankButtonContainerRef.current;
+        if (!container) {
+            return;
+        }
+        const containerRect = container.getBoundingClientRect();
+        movePrankButton({
+            x: event.clientX - containerRect.left,
+            y: event.clientY - containerRect.top
+        });
+    };
+
+    const handlePrankFocus = () => {
+        setPrankModeEnabled(false);
+        setPrankButtonOffset({ x: 0, y: 0 });
+    };
 
     return (
         <div style={{ display: "flex", flexDirection: "column", height: "fit-content", overflow: "auto", width: "100vw", padding: 0, margin: 0 }}>
@@ -222,20 +306,33 @@ export default function OSA() {
                             {error && (
                                 <p>{`Felmeddelande: ${errorMessage}`}</p>
                             )}
-                            <button
-                                className="osa-form-button"
-                                type="submit"
+                            <div
+                                className="osa-button-prank"
+                                ref={prankButtonContainerRef}
+                                onMouseEnter={handlePrankMouseEnter}
+                                onMouseMove={handlePrankMouseMove}
                             >
-                                {!loading && (
-                                    "Skicka"
-                                )}
-                                {loading === true && (
-                                    <div className="spinnerContainer">
-                                        <div className="spinner">
+                                <button
+                                    ref={prankButtonRef}
+                                    className={`osa-form-button${prankModeEnabled ? " prank-mode" : ""}`}
+                                    type="submit"
+                                    onMouseEnter={handlePrankMouseMove}
+                                    onMouseMove={handlePrankMouseMove}
+                                    onMouseDown={(e) => { e.preventDefault(); handlePrankMouseMove(e); }}
+                                    onFocus={handlePrankFocus}
+                                    style={prankModeEnabled ? { left: prankButtonOffset.x, top: prankButtonOffset.y } : {}}
+                                >
+                                    {!loading && (
+                                        "Skicka"
+                                    )}
+                                    {loading === true && (
+                                        <div className="spinnerContainer">
+                                            <div className="spinner">
+                                            </div>
                                         </div>
-                                    </div>
-                                )}
-                            </button>
+                                    )}
+                                </button>
+                            </div>
 
                         </div>
                         {submitSuccess == true && (

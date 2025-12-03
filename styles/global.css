@@ -848,6 +848,22 @@ img {
   box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
 }
 
+.osa-button-prank {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.osa-form-button.prank-mode {
+  position: absolute;
+  transition: left 0.2s ease, top 0.2s ease;
+}
+
 .our-love-image {
   display: flex;
   z-index: 2;
