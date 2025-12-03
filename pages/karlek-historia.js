@@ -2,13 +2,15 @@ import TopContent from '../components/TopContent';
 import RibbonContent from '../components/RibbonContent';
 import CountdownWrapper from '../components/CountdownWrapper';
 import Image from 'next/image';
-import WeddingAustralia from '../public/wedding-australia-s.png';
-import WeddingEngagement from '../public/wedding-engagement-s.png';
-import WeddingFirstMeet from '../public/wedding-firstmeet.png';
-import WeddingRome from '../public/wedding-rome-s.png';
-import Wedding14 from '../public/2014_1.jpeg';
-import Wedding16 from '../public/2016_1.jpeg';
-import Wedding17 from '../public/2017_1.jpeg';
+import Anncus1 from '../public/anncus_1.png';
+import Anncus2 from '../public/anncus_2.png';
+import Anncus3 from '../public/anncus_3.png';
+import Anncus4 from '../public/anncus_4.png';
+import Anncus5 from '../public/anncus_5.png';
+import Anncus6 from '../public/anncus_6.png';
+import Anncus7 from '../public/anncus_7.png';
+import Anncus8 from '../public/anncus_8.png';
+import Anncus9 from '../public/anncus_9.png';
 import { useDimensions } from "@/hooks/responsive";
 
 
@@ -25,7 +27,7 @@ export default function KarlekHistoria() {
             {/* Unique page content */}
             <div className="main-content-container" style={{marginBottom: 40}}>
                 <h1>VÅR KÄRLEKSHISTORIA</h1>
-                <p>11 år tillsammans går fort, låt oss titta på vad som egentligen har hänt under den här tiden!</p>
+                <p>9 år tillsammans går fort. Låt oss titta på vad som egentligen har hänt under den här tiden...</p>
 
                 <div className="divider-wrapper">
                     <div />
@@ -42,7 +44,7 @@ export default function KarlekHistoria() {
 
                             <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
                                 <p style={{ fontSize: "0.9rem" }}>Där det började...</p>
-                                <h2>2013</h2>
+                                <h2>2017</h2>
                             </div>
                         </div>
 
@@ -59,60 +61,75 @@ export default function KarlekHistoria() {
 
                                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
                                     <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
-                                        <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2013</p>
-                                        <div style={{ width: "4rem", height: 1.5, backgroundColor: "#CBC5B9" }} />
-                                    </div>
-                                    <Image src={WeddingFirstMeet} alt="första träffen" className="our-love-image" />
-                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Efter många månaders uppvaktning från Christian är denna bild från efterfesten då Tove släppte garden och vi lärde känna varandra!</p>
-                                </div>
-                                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
-                                    <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
-                                        <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2014</p>
-                                        <div style={{ width: "8rem", height: 1.5, backgroundColor: "#CBC5B9" }} />
-                                    </div>
-                                    <Image src={Wedding14} alt="kth början" className="our-love-image" />
-                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Christian börjar på KTH och flyttar till Stockholm. Tove kommer på besök över helgerna och vi delar på det rymliga 18 kvm stora studentrummet.</p>
-                                </div>
-                                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
-                                    <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
-                                        <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2016</p>
-                                        <div style={{ width: "5rem", height: 1.5, backgroundColor: "#CBC5B9" }} />
-                                    </div>
-                                    <Image src={Wedding16} alt="kth party" className="our-love-image" />
-                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Tove och Christian studerar nu på KTH tillsammans och steker runt på finsittningar.</p>
-                                </div>
-                                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
-                                    <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
                                         <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2017</p>
-                                        <div style={{ width: "5rem", height: 1.5, backgroundColor: "#CBC5B9" }} />
+                                        <div style={{ width: "4rem", height: 1.5, backgroundColor: "#8AAED1" }} />
                                     </div>
-                                    
-                                    <Image src={Wedding17} alt="kak-paradiset" className="our-love-image" />
-                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Bild tagen (innan) kak-frossa på Taxinge slott. Christian har precis opererat höger knä så Tove får vara stöd. Wife material!</p>
+                                    <Image src={Anncus1} alt="första träffen" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Två töntiga spexare hittar varandra på I-sektionen. I skådisgruppen spelar de – något olägligt – ett syskonpar.</p>
+                                </div>
+                                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
+                                    <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
+                                        <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2018</p>
+                                        <div style={{ width: "8rem", height: 1.5, backgroundColor: "#8AAED1" }} />
+                                    </div>
+                                    <Image src={Anncus2} alt="kth början" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>En tunnhårigare Marcus tar examen och har nyss fått sitt diplom. Anna har blivit entledigad från jobbet som marskalk på ceremonin och är redo att skåla.</p>
                                 </div>
                                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
                                     <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
                                         <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2019</p>
-                                        <div style={{ width: "5rem", height: 1.5, backgroundColor: "#CBC5B9" }} />
+                                        <div style={{ width: "5rem", height: 1.5, backgroundColor: "#8AAED1" }} />
                                     </div>
-                                    <Image src={WeddingAustralia} alt="förlovade" className="our-love-image" />
-                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Tove åker så långt bort från Sverige som möjligt för en utbytestermin i Brisbane, Australien. Bilden är tagen på okänd mark efter något regnskogsäventyr.</p>
+                                    <Image src={Anncus3} alt="kth party" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Anna och Marcus dressar upp för fest på Gotland, fyllt av lekar, sång och ståhej!</p>
+                                </div>
+                                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
+                                    <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
+                                        <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2020</p>
+                                        <div style={{ width: "5rem", height: 1.5, backgroundColor: "#8AAED1" }} />
+                                    </div>                                    
+                                    <Image src={Anncus4} alt="kak-paradiset" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Utsikt över Sri Lanka – vårt andra äventyr med familjen Kjellberg. Efter en covid-paus blev det många fler resor – idag hela 28 länder tillsammans!</p>
                                 </div>
                                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
                                     <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
                                         <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2021</p>
-                                        <div style={{ width: "8rem", height: 1.5, backgroundColor: "#CBC5B9" }} />
+                                        <div style={{ width: "5rem", height: 1.5, backgroundColor: "#8AAED1" }} />
                                     </div>
-                                    <Image src={WeddingRome} alt="rom" className="our-love-image" />
-                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Många resor har vi gjort genom åren, här är vi i Rom under en resa i Italien.</p>
+                                    <Image src={Anncus5} alt="förlovade" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Vandring upptäcktes redan vårt första år – innan vi hade råd. Som nyblivna DINKar gick vi från välling på Kebnekaise till renskavsbuffé på Jämtlandstriangeln.</p>
+                                </div>
+                                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
+                                    <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
+                                        <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2022</p>
+                                        <div style={{ width: "8rem", height: 1.5, backgroundColor: "#8AAED1" }} />
+                                    </div>
+                                    <Image src={Anncus6} alt="rom" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Innan dykning i Malta. Bilden ser gullig ut men skenet bedrar, för Anna har som vanligt nervöskissat ungefär hundra gånger innan.</p>
                                 </div>
                                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
                                     <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
                                         <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2023</p>
-                                        <div style={{ width: "6.5rem", height: 1.5, backgroundColor: "#CBC5B9" }} />
+                                        <div style={{ width: "6.5rem", height: 1.5, backgroundColor: "#8AAED1" }} />
                                     </div>
-                                    <Image src={WeddingEngagement} alt="förlovade" className="our-love-image" />
-                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>På vår 10-årsdag (som firades i Spanien) gick Christian äntligen ner på knä och vi förlovade oss!</p>
+                                    <Image src={Anncus7} alt="förlovade" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Vem vet, kanske är detta vårt sista festande på KTH? Här har vi fångat biljetter till Kravallen för att dansa loss in på småtimmarna.</p>
+                                </div>
+                                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
+                                    <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
+                                        <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2024</p>
+                                        <div style={{ width: "4.5rem", height: 1.5, backgroundColor: "#8AAED1" }} />
+                                    </div>
+                                    <Image src={Anncus8} alt="förlovade" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Efter att Anna på nyårsafton hotat om att snart ta saken i egna händer fick Marcus tummen ur och beställde en ring. Frieriet skedde vid Lake Ohrid i Nordmakedonien och hör och häpna… Anna sa “Ja”!</p>
+                                </div>
+                                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
+                                    <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
+                                        <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2025</p>
+                                        <div style={{ width: "6.5rem", height: 1.5, backgroundColor: "#8AAED1" }} />
+                                    </div>
+                                    <Image src={Anncus9} alt="förlovade" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Två trötta men segerlystna löpare som tagit sig i mål på Lidingöloppet. Efter åtta år tillsammans har Marcus dumheter smittat av sig på Anna, som nu stolt genomför sin första klassiker.</p>
                                 </div>
                             </div>
 
@@ -122,7 +139,7 @@ export default function KarlekHistoria() {
                         {/* Bottom Row */}
                         <div style={{ display: "flex", width: "100%", flexDirection: "row", marginBottom: 40, justifyContent: "flex-start" }}>
                             <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-                                <h2>2025</h2>
+                                <h2>2026</h2>
                                 <p>Wedding time baby!</p>
                             </div>
                         </div>
@@ -140,7 +157,7 @@ export default function KarlekHistoria() {
                             <div style={{ flex: 1 }} />
                             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                                 <p style={{ fontSize: "0.9rem" }}>Där det började...</p>
-                                <h2>2013</h2>
+                                <h2>2017</h2>
                             </div>
                             <div style={{ flex: 1 }} />
                         </div>
@@ -151,28 +168,37 @@ export default function KarlekHistoria() {
                             {/* Center row - Left Col*/}
                             <div style={{ display: "flex", flex: 1, flexDirection: "column", justifyContent: "center", gap: 40 }}>
                                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10, paddingLeft: 10 }}>
-                                    <p style={{ textAlign: "right", fontSize: 12, maxWidth: 300 }}>Christian börjar på KTH och flyttar till Stockholm. Tove kommer på besök över helgerna och vi delar på det rymliga 18 kvm stora studentrummet.</p>
-                                    <Image src={Wedding14} alt="kth start" className="our-love-image" />
+                                    <p style={{ textAlign: "right", fontSize: 12, maxWidth: 300 }}>En tunnhårigare Marcus tar examen och har nyss fått sitt diplom. Anna har blivit entledigad från jobbet som marskalk på ceremonin och är redo att skåla.</p>
+                                    <Image src={Anncus2} alt="examen" className="our-love-image" style={{height: 340}}/>
                                     <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
-                                        <p style={{ marginLeft: 10, paddingBottom: 10 }}>2014</p>
-                                        <div style={{ width: "7.5rem", height: 2, backgroundColor: "#CBC5B9" }} />
+                                        <p style={{ marginLeft: 10, paddingBottom: 10 }}>2018</p>
+                                        <div style={{ width: "7.5rem", height: 2, backgroundColor: "#8AAED1" }} />
                                     </div>
                                 </div>
                                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10, paddingLeft: 10 }}>
-                                    <p style={{ textAlign: "right", fontSize: 12, maxWidth: 300 }}>Bild tagen (innan) kak-frossa på Taxinge slott. Christian har precis opererat höger knä så Tove får vara stöd. Wife material!</p>
-                                    <Image src={Wedding17} alt="kak paradiset" className="our-love-image" />
+                                    <p style={{ textAlign: "right", fontSize: 12, maxWidth: 300 }}>Utsikt över Sri Lanka – vårt andra äventyr med familjen Kjellberg. Efter en covid-paus blev det många fler resor – idag hela 28 länder tillsammans!</p>
+                                    <Image src={Anncus4} alt="sri-lanka" className="our-love-image" />
                                     <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
-                                        <p style={{ marginLeft: 10, paddingBottom: 10 }}>2017</p>
-                                        <div style={{ width: "6.5rem", height: 2, backgroundColor: "#CBC5B9" }} />
+                                        <p style={{ marginLeft: 10, paddingBottom: 10 }}>2020</p>
+                                        <div style={{ width: "6.5rem", height: 2, backgroundColor: "#8AAED1" }} />
                                     </div>
                                 </div>
                                 {/* NEW */}
                                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10, paddingLeft: 10 }}>
-                                    <p style={{ textAlign: "right", fontSize: 12, maxWidth: 300 }}>Många resor har vi gjort genom åren, här är vi i Rom under en resa i Italien.</p>
-                                    <Image src={WeddingRome} alt="rom" className="our-love-image" />
+                                    <p style={{ textAlign: "right", fontSize: 12, maxWidth: 300 }}>Innan dykning i Malta. Bilden ser gullig ut men skenet bedrar, för Anna har som vanligt nervöskissat ungefär hundra gånger innan.</p>
+                                    <Image src={Anncus6} alt="malta" className="our-love-image" />
                                     <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
-                                        <p style={{ marginLeft: 10, paddingBottom: 10 }}>2021</p>
-                                        <div style={{ width: "8.5rem", height: 2, backgroundColor: "#CBC5B9" }} />
+                                        <p style={{ marginLeft: 10, paddingBottom: 10 }}>2022</p>
+                                        <div style={{ width: "8.5rem", height: 2, backgroundColor: "#8AAED1" }} />
+                                    </div>
+                                </div>
+                                {/* NEW */}
+                                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10, paddingLeft: 10 }}>
+                                    <p style={{ textAlign: "right", fontSize: 12, maxWidth: 300 }}>Efter att Anna på nyårsafton hotat om att snart ta saken i egna händer fick Marcus tummen ur och beställde en ring. Frieriet skedde vid Lake Ohrid i Nordmakedonien och hör och häpna… Anna sa “Ja”!</p>
+                                    <Image src={Anncus8} alt="frieri" className="our-love-image" />
+                                    <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
+                                        <p style={{ marginLeft: 10, paddingBottom: 10 }}>2024</p>
+                                        <div style={{ width: "8.5rem", height: 2, backgroundColor: "#8AAED1" }} />
                                     </div>
                                 </div>
                             </div>
@@ -186,36 +212,45 @@ export default function KarlekHistoria() {
                             <div style={{ display: "flex", flex: 1, flexDirection: "column", justifyContent: "center", gap: 40 }}>
                                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10, paddingRight: 10 }}>
                                     <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
-                                        <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2013</p>
-                                        <div style={{ width: "5.75rem", height: 2, backgroundColor: "#CBC5B9" }} />
+                                        <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2017</p>
+                                        <div style={{ width: "5.75rem", height: 2, backgroundColor: "#8AAED1" }} />
                                     </div>
-                                    <Image src={WeddingFirstMeet} alt="första träffen" className="our-love-image" />
-                                    <p style={{ textAlign: "left", fontSize: 12, maxWidth: 300 }}>Efter många månaders uppvaktning från Christian är denna bild från efterfesten då Tove släppte garden och vi lärde känna varandra!</p>
-                                </div>
-                                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10, paddingRight: 10 }}>
-                                    <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
-                                        <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2016</p>
-                                        <div style={{ width: "7.25rem", height: 2, backgroundColor: "#CBC5B9" }} />
-                                    </div>                                    
-                                    <Image src={Wedding16} alt="kth party" className="our-love-image" />
-                                    <p style={{ textAlign: "left", fontSize: 12, maxWidth: 300 }}>Tove och Christian studerar nu på KTH tillsammans och steker runt på finsittningar.</p>
+                                    <Image src={Anncus1} alt="första träffen" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: 12, maxWidth: 300 }}>Två töntiga spexare hittar varandra på I-sektionen. I skådisgruppen spelar de – något olägligt – ett syskonpar.</p>
                                 </div>
                                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10, paddingRight: 10 }}>
                                     <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
                                         <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2019</p>
-                                        <div style={{ width: "6.5rem", height: 2, backgroundColor: "#CBC5B9" }} />
+                                        <div style={{ width: "7.25rem", height: 2, backgroundColor: "#8AAED1" }} />
+                                    </div>                                    
+                                    <Image src={Anncus3} alt="gotland" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: 12, maxWidth: 300 }}>Anna och Marcus dressar upp för fest på Gotland, fyllt av lekar, sång och ståhej!</p>
+                                </div>
+                                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10, paddingRight: 10 }}>
+                                    <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
+                                        <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2021</p>
+                                        <div style={{ width: "6.5rem", height: 2, backgroundColor: "#8AAED1" }} />
                                     </div>
-                                    <Image src={WeddingAustralia} alt="australien" className="our-love-image" />
-                                    <p style={{ textAlign: "left", fontSize: 12, maxWidth: 300 }}>Tove åker så långt bort från Sverige som möjligt och tar en utbytestermin i Brisbane (Australien). Bilden är tagen på okänd mark efter något regnskogsäventyr.</p>
+                                    <Image src={Anncus5} alt="vandring" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: 12, maxWidth: 300 }}>Vandring upptäcktes redan vårt första år – innan vi hade råd. Som nyblivna DINKar gick vi från välling på Kebnekaise till renskavsbuffé på Jämtlandstriangeln.</p>
                                 </div>
                                 {/* NEW */}
                                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10, paddingRight: 10 }}>
                                     <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
                                         <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2023</p>
-                                        <div style={{ width: "7.5rem", height: 2, backgroundColor: "#CBC5B9" }} />
+                                        <div style={{ width: "7.5rem", height: 2, backgroundColor: "#8AAED1" }} />
                                     </div>
-                                    <Image src={WeddingEngagement} alt="förlovade" className="our-love-image" />
-                                    <p style={{ textAlign: "left", fontSize: 12, maxWidth: 300 }}>På vår 10-årsdag (som firades i Spanien) gick Christian äntligen ner på knä och vi förlovade oss!</p>
+                                    <Image src={Anncus7} alt="kravallen" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: 12, maxWidth: 300 }}>Vem vet, kanske är detta vårt sista festande på KTH? Här har vi fångat biljetter till Kravallen för att dansa loss in på småtimmarna.</p>
+                                </div>
+                                {/* NEW */}
+                                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10, paddingRight: 10 }}>
+                                    <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
+                                        <p style={{ marginRight: 10, paddingBottom: 10, textAlign: "right" }}>2025</p>
+                                        <div style={{ width: "7.5rem", height: 2, backgroundColor: "#8AAED1" }} />
+                                    </div>
+                                    <Image src={Anncus9} alt="lidingöloppet" className="our-love-image" />
+                                    <p style={{ textAlign: "left", fontSize: 12, maxWidth: 300 }}>Två trötta men segerlystna löpare som tagit sig i mål på Lidingöloppet. Efter åtta år tillsammans har Marcus dumheter smittat av sig på Anna, som nu stolt genomför sin första klassiker.</p>
                                 </div>
                             </div>
                         </div>
@@ -224,7 +259,7 @@ export default function KarlekHistoria() {
                         <div style={{ display: "flex", flexDirection: "row", marginBottom: 40 }}>
                             <div style={{ flex: 1 }} />
                             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                                <h2>2025</h2>
+                                <h2>2026</h2>
                                 <p>Wedding time baby!</p>
                             </div>
                             <div style={{ flex: 1 }} />
@@ -235,7 +270,7 @@ export default function KarlekHistoria() {
             </div>
 
             <RibbonContent />
-            <CountdownWrapper targetDate="2025-05-29T15:00:00" /> {/* (ant. 14.00 + 1 || 14.00 + 2) Behöver göra Svensk tid + 1h (vinter) + 2h sommartid för att beräkningarna ska funka*/}
+            <CountdownWrapper targetDate="2026-06-27T16:30:00" /> {/* (ant. 14.00 + 1 || 14.00 + 2) Behöver göra Svensk tid + 1h (vinter) + 2h sommartid för att beräkningarna ska funka*/}
 
         </div>
     );
