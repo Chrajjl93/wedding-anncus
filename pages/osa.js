@@ -216,7 +216,7 @@ export default function OSA() {
                             </div>
                             
                             <div className="osa-confirm-container">
-                                <label className="text-input-label" style={{ margin: 0, fontSize: "0.75rem", color: "#363636" }}>Bekräfta svaren genom att skriva 'ja'</label>
+                                <label className="text-input-label" style={{ margin: 0, fontSize: "0.75rem", color: "#3F4854" }}>Bekräfta svaren genom att skriva 'ja'</label>
                                 <input className="text-input" style={{ paddingTop: 0 }} type="text" placeholder="ja" />
                             </div>
                             {error && (
