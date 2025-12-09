@@ -248,7 +248,7 @@ export default function OSA() {
 
                     <div className="osa-sub-center">
 
-                        <p style={{fontSize: "0.8rem", textAlign: "center", padding: "20px 40px"}}>{`Sista datum för OSA är 30 april 2026 (men helst samma dag som du får inbjudan om du frågar Anna ;))`}</p>
+                        <p style={{fontSize: "0.8rem", textAlign: "center", padding: "20px 40px"}}>{`Sista datum för OSA är 30 april 2026 (men helst samma dag som du får inbjudan om du frågar Anna)`}</p>
 
                         <div style={{ display: "flex", flexDirection: "column", width: "60%", alignItems: "center", marginTop: 20, gap: 10 }}>
                             <label className="text-input-label-2">OSAr du för någon mer än dig själv? (förnamn & efternamn)</label>

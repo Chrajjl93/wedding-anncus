@@ -24,7 +24,7 @@ export default function HittaHit() {
                     <div>
                         <Image className="hitta-hit-img" src={hitta_hit_1} alt="image" />
                     </div>
-                    <p>Noors slott ligger intill E4an strax söder om Uppsala och ca 50 min bil från Stockholm. Prata gärna ihop er med andra gäster om att samåka!</p>
+                    <p>Noors Slott ligger intill E4an strax söder om Uppsala och ca 50 min bil från Stockholm. Prata gärna ihop er med andra gäster om att samåka!</p>
                 </div>
 
                 <div className="hitta-hit-div" style={{ marginTop: 20, alignItems: "center" }}>
