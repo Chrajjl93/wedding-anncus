@@ -22,7 +22,7 @@ export default function Toastmasters() {
 
                 <h1>TOASTMASTERS</h1>
                 <p>Under dagen kommer ni att föras och förföras av våra fantastiska toastmasters. Låt oss presentera dunderduon Alice och Marcus!</p>
-                <p>Dessa galenskapare nås enklast via mejl:</p>
+                <p>Om ni vill förgylla vår kväll med tal eller annan underhållning når ni dessa galenskapare på:</p>
                 <p style={{ marginTop: 0 }}>annaochmarcus2026@gmail.com</p>
                 <div className="divider-wrapper">
                     <div />

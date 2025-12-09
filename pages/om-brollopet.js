@@ -29,7 +29,7 @@ export default function AboutTheWedding() {
 
                     <div className="programme-div">
                         <h4>15.30 Vigsel</h4>
-                        <p>Vigseln hålls i den grönskande parken på slottets baksida. Där utlovas löften, skönsång och en kyss! Om himlen får för sig att vattna trädgården flyttar vi vigseln till sommarloungen.</p>
+                        <p>Vigseln hålls i den grönskande parken på slottets baksida. Där utlovas löften, skönsång och en kyss! Vi ber er att under vigseln låta kameror och mobiler vila. Vår fotograf kommer att föreviga detta ögonblick! Om himlen får för sig att vattna trädgården flyttar vi vigseln till sommarloungen.</p>
                     </div>
                     <div className="programme-div">
                         <h4>16.00 Mingel och brudskål</h4>
@@ -76,7 +76,7 @@ export default function AboutTheWedding() {
 
                     <div className="programme-div" style={{alignItems: "center", textAlign: "center", marginTop: "2rem"}}>
                         <h3>GÅVOR</h3>
-                        <p>Den största gåvan för oss är att få fira vår stora dag tillsammans med er. Önskar ni ändå ge en gåva hade vi uppskattat ett bidrag till vår bröllopsresa. Bidraget tas emot av Annas pappa Sergej på Swish-nummer 070-0877930.</p>
+                        <p>Den största gåvan för oss är att få fira vår stora dag tillsammans med er. Önskar ni ändå ge en gåva hade vi uppskattat ett bidrag till vår bröllopsresa. Bidraget tas emot av Marcus mamma Lena på Swish-nummer <span style={{whiteSpace: "nowrap"}}>073-5058833.</span></p>
                     </div>
 
                     <div className="programme-div" style={{alignItems: "center", textAlign: "center", marginTop: "2rem", marginBottom: "2rem"}}>

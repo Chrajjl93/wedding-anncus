@@ -105,7 +105,7 @@ export default function KarlekHistoria() {
                                         <div style={{ width: "8rem", height: 1.5, backgroundColor: "#8AAED1" }} />
                                     </div>
                                     <Image src={Anncus6} alt="rom" className="our-love-image" />
-                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Innan dykning i Malta. Bilden ser gullig ut men skenet bedrar, för Anna har som vanligt nervöskissat ungefär hundra gånger innan.</p>
+                                    <p style={{ textAlign: "left", fontSize: "0.75rem", maxWidth: 200 }}>Innan dykning på Malta. Bilden ser gullig ut men skenet bedrar, för Anna har som vanligt nervöskissat ungefär hundra gånger innan.</p>
                                 </div>
                                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
                                     <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
@@ -169,7 +169,7 @@ export default function KarlekHistoria() {
                             <div style={{ display: "flex", flex: 1, flexDirection: "column", justifyContent: "center", gap: 40 }}>
                                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10, paddingLeft: 10 }}>
                                     <p style={{ textAlign: "right", fontSize: 12, maxWidth: 300 }}>En tunnhårigare Marcus tar examen och har nyss fått sitt diplom. Anna har blivit entledigad från jobbet som marskalk på ceremonin och är redo att skåla.</p>
-                                    <Image src={Anncus2} alt="examen" className="our-love-image" style={{height: 340}}/>
+                                    <Image src={Anncus2} alt="examen" className="our-love-image"/>
                                     <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
                                         <p style={{ marginLeft: 10, paddingBottom: 10 }}>2018</p>
                                         <div style={{ width: "7.5rem", height: 2, backgroundColor: "#8AAED1" }} />
@@ -185,7 +185,7 @@ export default function KarlekHistoria() {
                                 </div>
                                 {/* NEW */}
                                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10, paddingLeft: 10 }}>
-                                    <p style={{ textAlign: "right", fontSize: 12, maxWidth: 300 }}>Innan dykning i Malta. Bilden ser gullig ut men skenet bedrar, för Anna har som vanligt nervöskissat ungefär hundra gånger innan.</p>
+                                    <p style={{ textAlign: "right", fontSize: 12, maxWidth: 300 }}>Innan dykning på Malta. Bilden ser gullig ut men skenet bedrar, för Anna har som vanligt nervöskissat ungefär hundra gånger innan.</p>
                                     <Image src={Anncus6} alt="malta" className="our-love-image" />
                                     <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
                                         <p style={{ marginLeft: 10, paddingBottom: 10 }}>2022</p>
