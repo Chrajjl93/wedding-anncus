@@ -24,7 +24,7 @@ export default function Boende() {
                 <Image className="hitta-hit-img" style={{paddingLeft: "5.25rem", paddingRight: "5.25rem", paddingTop: "3rem", borderRadius: "0.5rem"}} src={boende_1} alt="image" />
                 <p style={{margin: 20}}>Vi hoppas att så många som möjligt vill stanna över natten med oss på Noors Slott. Här finns plats för alla, en mumsig frukost som väntar på söndagsmorgonen och – kanske det finaste av allt – en chans att tillsammans få landa, skratta och dela minnen från dagen vi just skapat.</p>
                 <p style={{margin: 20}}>Rummen är av hotellstandard och fördelas på enkel- och dubbelrum. Lakan, handdukar, hårfön samt tvål finns på alla rummen.</p>
-                <p style={{margin: 10}}>Bokning sker via mail på booking@noors.se där ni uppger datumet 27 juni och att ni är gäster till vårt bröllop.</p>
+                <p style={{margin: 10}}>Bokning sker via mail på bokning@noors.se där ni uppger datumet 27 juni och att ni är gäster till vårt bröllop.</p>
                 <p style={{margin: 2}}>Pris dubbelrum: 895 kr/person</p>
                 <p style={{margin: 2}}>Pris enkelrum: 995 kr/person</p>
                 <p style={{margin: 2}}>I priset inkluderas frukostbuffé.</p>
