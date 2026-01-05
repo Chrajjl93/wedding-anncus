@@ -190,7 +190,7 @@ export default function OSA() {
                                     <p>
                                         Jag / Vi kommer och övernattar!
                                         <span style={{ display: "block", paddingTop: 12 }}>
-                                            Bokning sker via mail på bokning@noors.se där ni uppger datumet 27 juni och att ni är gäster till vårt bröllop.
+                                            Bokning sker via mail på bokning@noorsslott.se där ni uppger datumet 27 juni och att ni är gäster till vårt bröllop.
                                         </span>
                                         <span style={{ display: "block", paddingTop: 12 }}>Pris dubbelrum: 895 kr/person</span>
                                         <span style={{ display: "block", paddingTop: 4 }}>Pris enkelrum: 995 kr/person</span>
