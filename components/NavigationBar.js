@@ -23,9 +23,9 @@ const MobileMenu = ({ onBlur }) => {
     return (
         <div ref={menuRef} className="mobile-menu" tabIndex={-1} onBlur={onBlur}>
 
-            <Link href="/osa" className="navbar-mobile-link">
+            {/* <Link href="/osa" className="navbar-mobile-link">
                 <p className="navbar-mobile-button-text">OSA</p>
-            </Link>
+            </Link> */}
             <Link href="/om-brollopet" className="navbar-mobile-link">
                 <p className="navbar-mobile-button-text">Om bröllopet</p>
             </Link>
@@ -100,9 +100,9 @@ const NavigationBar = (props) => {
 
             <div className="desktop-only" style={{ flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center", backgroundColor: "#A9C0D4" }}>
                 <div style={{ flex: 1 }} />
-                <Link href="/osa" className={`navbar-button-link${router.pathname === "/osa" ? " active" : ""}`} style={{marginLeft: -50}}>
+                {/* <Link href="/osa" className={`navbar-button-link${router.pathname === "/osa" ? " active" : ""}`} style={{marginLeft: -50}}>
                     <p className="navbar-button-text">OSA</p>
-                </Link>
+                </Link> */}
                 <Link href="/om-brollopet" className={`navbar-button-link${router.pathname === "/om-brollopet" ? " active" : ""}`}>
                     <p className="navbar-button-text">Om bröllopet</p>
                 </Link>

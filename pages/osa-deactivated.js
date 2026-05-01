@@ -24,6 +24,7 @@ export default function OSA() {
     const [loading, setLoading] = useState(null);
     const handleSubmit = (e) => {
         e.preventDefault();
+        return;
 
         let array = e.target;
 
